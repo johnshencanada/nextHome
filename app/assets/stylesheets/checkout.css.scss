@@ -1,12 +1,21 @@
+::selection 
+{
+  color: #FFF;
+  background: #1b91d8;
+}
+
+
 .main_content
 {
   width: 560px;
   float: left;
   h3
   {
+    font-size: 70px;
     margin-bottom: 30px;
     color: #4b4b4b;
     line-height: 1;
+    font-weight: 200;
   }
   p
   {

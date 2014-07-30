@@ -1,22 +1,51 @@
 .footer 
 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #5A5A5A),
+    color-stop(1, #2C2C2C)
+  );
+  background-image: -o-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -moz-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -webkit-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -ms-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: linear-gradient(to bottom, #5A5A5A 0%, #2C2C2C 100%);
+
   padding: 40px 0;
+  text-align: center;
+  clear:both;
+
   ul 
   {
     float: left;
   }
+
   li 
   {
+    color: #FFF;
     margin-bottom: 10px;
   }
+
   a 
   {
     font-size: 18px;
-    color: #525252;
+    color: #FFF;
     font-family: $primary_font, $secondary_font, $tertiary_font;
   }
+  
   p 
   {
-    font-size: 18px;
+    color: #FFF;
+    font-family: $primary_font, $secondary_font, $tertiary_font;
+    font-weight: 400;
+    font-size: 14px;
   }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  } 
 }

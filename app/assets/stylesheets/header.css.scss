@@ -1,19 +1,51 @@
-#lockitron_header
-{
-  border: none;
-  a
-  {
-    border: none !important;
-    font-size: inherit !important;
-  }
+h1 {
+  margin-top:-10px;
+  margin-left:-5px;
+
+  // margin: 0 auto;
+  letter-spacing: -.05em;
+  width: 174px;
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 400;
+  color: $h1_color;
+  float: left;
 }
+
+h1:hover {
+  color: #F8F069;
+}
+
 #header 
 {
+  opacity: 0.9;
+  position: fixed;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #5A5A5A),
+    color-stop(1, #2C2C2C)
+  );
+  background-image: -o-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -moz-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -webkit-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: -ms-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
+  background-image: linear-gradient(to bottom, #5A5A5A 0%, #2C2C2C 100%);
+  top:0;
+  height: 20px;
   width: 100%;
   padding: 26px 0;
   -moz-box-shadow:    0px 1px 3px 0px #acacac;
   -webkit-box-shadow: 0px 1px 3px 0px #acacac;
   box-shadow:         0px 1px 3px 0px #acacac;
-  background: #fcfcfc;
-  position: relative;
+
+  img {
+    margin: -20px 0;
+    float: left;
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
 }
