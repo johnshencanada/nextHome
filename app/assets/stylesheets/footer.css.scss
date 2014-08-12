@@ -12,7 +12,6 @@
   background-image: -webkit-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
   background-image: -ms-linear-gradient(bottom, #5A5A5A 0%, #2C2C2C 100%);
   background-image: linear-gradient(to bottom, #5A5A5A 0%, #2C2C2C 100%);
-
   padding: 40px 0;
   text-align: center;
   clear:both;
@@ -38,14 +37,16 @@
   p 
   {
     color: #FFF;
+    font: 300;
     font-family: $primary_font, $secondary_font, $tertiary_font;
     font-weight: 400;
     font-size: 14px;
   }
 
   .social-icon {
+    display: inline;
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 10px 5px;
   } 
 }

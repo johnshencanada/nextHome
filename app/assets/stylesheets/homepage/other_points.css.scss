@@ -1,28 +1,72 @@
 #other_points 
 {
+  background-image: url("BlurryHouse.jpg");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 160% 160%;
+  margin: 0px auto;
+
   li 
   {
-    width: 400px;
+    display: inlin-block;
+    width: 35%;
     float: left;
-    margin: 0 120px 50px 0;
+    margin: 0 7.5%;
     padding-top: 60px;
   }
+
   #section-1 {
+    img {
+      margin: 10px auto;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
     background: url(asset-path("", "images")) no-repeat center top;
   }
+
   #section-2 {
+    img {
+      margin: 15px auto;
+      display: block;
+      height: 70px;
+      width: 70px;
+    }
     background: url(asset-path("", "images")) no-repeat center top;
     margin-right: 0px;
   }
+
   #section-3 {
+    img {
+      margin: 15px auto;
+      display: block;
+      height: 70px;
+      width: 70px;
+    }
     background: url(asset-path("", "images")) no-repeat center top;
   }
+
   #section-4 {
+    img {
+      margin: 15px auto;
+      display: block;
+      height: 70px;
+      width: 70px;
+    }
     background: url(asset-path("", "images")) no-repeat center top;
     margin-right: 0px;
   }
+
   h4 {
-    width: 400px;
+    color: white;
     text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  p {
+    margin: 0 0;
+    color: white;
+    font-size: 18px;
   }
 }
