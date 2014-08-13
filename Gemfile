@@ -13,6 +13,9 @@ end
 group :production do
   gem 'thin'
   gem 'pg'
+  
+  # For Heroku
+  gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required
@@ -38,5 +41,3 @@ gem 'amazon_flex_pay'
 # Configuration File
 gem 'rails_config'
 
-# For Heroku
-gem 'rails_12factor'
