@@ -1,10 +1,12 @@
 .big_wrapper {
   border-bottom: 1px solid #d2d2d2;
   background: #fff;
+  padding: 0px 35px;
 }
 
 .big_wrapper .wrapper {
-  padding: 35px 0;
+  width: 100%;
+  padding: 35px;
 }
 
 .point_copy {
@@ -27,15 +29,23 @@
 }
 
 #lightbulb {
-  float: right;
   display: inline;
-  margin: 0 50px;
+  margin: 0px auto;
   img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 30%;
+    max-width: 30%;
   }
   height: 400px;
   width: 150px;
+}
+
+#lightbulb-center {
+    display: inline;
+    text-align: center;
+    img {
+     max-height: 30%;
+     max-width: 30%;
+    }
 }
 
 h3 {
@@ -61,7 +71,7 @@ p {
 }
 
 #two {
-  background: url(image_path("2-background..jpg"));
+  background: url(image_path("2-background.png"));
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +89,65 @@ p {
   height: 600px;
 }
 
+/* Animations */
+.compare-1 {
+    width: 100px;
+    height: 50px;
+    background: #A4E786;
+    border-radius: 5px;
+}
+
+.compare-2 {
+    width: 100px;
+    height: 50px;
+    background: #FF3B30;
+    border-radius: 5px;
+
+}
+
+.compare-1:hover {
+    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+    animation: myfirst 2s;
+}
+
+.compare-2:hover {
+    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+    animation: myfirst 2s;
+}
+
+@-webkit-keyframes myfirst {
+    from {
+      width: 100px;
+    }
+    to {
+      width: 800px;
+    }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {
+      width: 100px;
+    }
+    to {
+      width: 800px;
+    }
+}
+
+.left {
+  float: left;
+}
+
 .right {
-  margin-left: 500px;
+  float: right;
+}
+
+.split-half {
+  margin-top: 150px;
+  height: 500px;
+  width: 50%;
+}
+.split-half h5 {
+  text-align: center;
+
 }

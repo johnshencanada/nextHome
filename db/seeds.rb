@@ -9,16 +9,16 @@ PaymentOption.create(
     [
         {
             amount: 10.00,
-            amount_display: '$10',
+            amount_display: '$10.00',
             description: '<strong>Basic level: </strong>You receive a great big thankyou from us!  You Rock',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1
         },
         {
-            amount: 100.00,
-            amount_display: '$100',
-            description: '<strong>Package 1: </strong>You receive our print edition',
+            amount: 40.00,
+            amount_display: '$40.00',
+            description: '<strong> One NextBulb: </strong> Second Generation NextBulb',
             shipping_desc: 'add $3 to ship outside the US',
             delivery_desc: 'Estimated delivery: Oct 2013',
             limit: 250
