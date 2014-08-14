@@ -16,6 +16,29 @@
   }
 }
 
+h3 {
+    font-family: $primary_font, $secondary_font, $tertiary_font;
+    font-weight: 300;
+    font-size: 70px;
+    color: $h3_color;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+p {
+  color: #737980;
+}
+
+.point_copy p, #other_points li p {
+    line-height: 1.5;
+}
+
+/****************** Simple  *******************/
+#one {
+  background: url(image_path("1-background.png")) no-repeat bottom left;
+  height: 800px;
+}
+
 #iphone {
   float: left;
   display: inline;
@@ -39,75 +62,120 @@
   width: 150px;
 }
 
-#lightbulb-center {
-    display: inline;
-    text-align: center;
-    img {
-     max-height: 30%;
-     max-width: 30%;
-    }
-}
-
-h3 {
-    font-family: $primary_font, $secondary_font, $tertiary_font;
-    font-weight: 300;
-    font-size: 70px;
-    color: $h3_color;
-    margin-bottom: 30px;
-    line-height: 1;
-}
-
-p {
-  color: #737980;
-}
-
-.point_copy p, #other_points li p {
-    line-height: 1.5;
-}
-
-#one {
-  background: url(image_path("1-background.png")) no-repeat bottom left;
-  height: 800px;
-}
-
+/************************************ Colorful  ************************************/
 #two {
   background: url(image_path("2-background.png"));
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 400px;
+  height: 500px;
 }
 
+.color_wheel {
+  margin-top: 200px;
+  float: left;
+  width: 500px;
+  height: 500px;
+  img {
+    max-width: 50%;
+   max-height: 50%;
+  }
+}
+
+.color_wheel:hover {
+    -webkit-animation: rotate 1s infinite linear; /* Chrome, Safari, Opera */
+    animation: rotate 2s;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/************************************ Smart  ************************************/
 #three {
   background: url(image_path("3-background.png")) no-repeat bottom left;
   height: 600px;
 }
 
+
+/************************************ Efficient  ************************************/
 #four {
   background: url(image_path("4-background.png")) no-repeat bottom left;
   height: 600px;
+
 }
 
-/* Animations */
+.title {
+  margin-bottom: 100px;
+}
+
+.names {
+    margin-top:20px;
+    display: block; 
+}
+
 .compare-1 {
-    width: 100px;
-    height: 50px;
-    background: #A4E786;
-    border-radius: 5px;
+  margin-top: 2px;
+  width: 950px;
+  height: 50px;
+  background: #A4E786;
+  border-radius: 10px;
+  display: block;
+  p {
+    float: right;
+    font-size: 40px;
+    color: white;
+  }
 }
 
 .compare-2 {
-    width: 100px;
-    height: 50px;
-    background: #FF3B30;
-    border-radius: 5px;
+  margin-top: 2px;
+  width: 500px;
+  height: 50px;
+  background: #1AD6FD; 
+  border-radius: 10px;
+  display: block;
 
+  p {
+    float: right;
+    font-size: 40px;
+    color: white;
+  }
+}
+
+.compare-3 {
+  margin-top: 2px;
+  width: 100px;
+  height: 50px;
+  background:#FF3B30;
+  border-radius: 10px;
+  display: block;
+
+  p {
+    float: right;
+    font-size: 40px;
+    color: white;
+  }
 }
 
 .compare-1:hover {
-    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
-    animation: myfirst 2s;
+  -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+  animation: myfirst 2s;
 }
 
 .compare-2:hover {
@@ -115,25 +183,31 @@ p {
     animation: myfirst 2s;
 }
 
+.compare-3:hover {
+    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+    animation: myfirst 2s;
+}
+
 @-webkit-keyframes myfirst {
-    from {
-      width: 100px;
-    }
-    to {
-      width: 800px;
-    }
+  from {
+    width: 50px;
+  }
+  to {
+    width: 950px;
+  }
 }
 
 /* Standard syntax */
 @keyframes myfirst {
-    from {
-      width: 100px;
-    }
-    to {
-      width: 800px;
-    }
+  from {
+    width: 50px;
+  }
+  to {
+    width: 950px;
+  }
 }
 
+/************************************ Buy Now ************************************/
 .left {
   float: left;
 }
@@ -147,7 +221,19 @@ p {
   height: 500px;
   width: 50%;
 }
+
+#lightbulb-center {
+    display: inline;
+    text-align: center;
+    img {
+      text-align: center;
+      margin-bottom: 50px;
+      margin-left: 200px;    
+      max-height: 30%;
+      max-width: 30%;
+    }
+}
+
 .split-half h5 {
   text-align: center;
-
 }

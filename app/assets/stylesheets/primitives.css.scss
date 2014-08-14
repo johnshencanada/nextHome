@@ -15,22 +15,21 @@
     zoom:1;
 }
 
- code
- {
+code {
   border: 1px solid #CCC;
   padding: 1px;
   vertical-align: middle;
   font-family: "Consolas", "Inconsolata", "Meslo", "Inconsolata-dz", monospace;
   text-shadow: none;
   font-size: 10pt;
- }
+}
 
 html, body {
   width: 100%;
 }
 
 body {
-  background: $body_background;
+  background: whitespace;
 }
 
 .disabled
