@@ -33,7 +33,7 @@ p {
     line-height: 1.5;
 }
 
-/****************** Simple  *******************/
+/************************************ Simple  ************************************/
 #one {
   background: url(image_path("1-background.png")) no-repeat bottom left;
   height: 800px;
@@ -51,15 +51,28 @@ p {
   width: 300px;
 }
 
+#app {
+  position: relative;
+  height: 450px;
+  width: 200px;
+  left: 22px;
+  top: -430px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  z-index: 1;
+}
+
 #lightbulb {
   display: inline;
   margin: 0px auto;
   img {
-    max-height: 30%;
-    max-width: 30%;
+    max-height: 10%;
+    max-width: 10%;
   }
-  height: 400px;
-  width: 150px;
+  max-height: 100px;
+  max-width: 50px;
 }
 
 /************************************ Colorful  ************************************/
@@ -75,53 +88,41 @@ p {
 .color_wheel {
   margin-top: 200px;
   float: left;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   img {
-    max-width: 50%;
-   max-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
-.color_wheel:hover {
-    -webkit-animation: rotate 1s infinite linear; /* Chrome, Safari, Opera */
-    animation: rotate 2s;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-/* Standard syntax */
-@keyframes myfirst {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
 /************************************ Smart  ************************************/
 #three {
   background: url(image_path("3-background.png")) no-repeat bottom left;
   height: 600px;
 }
 
-
 /************************************ Efficient  ************************************/
 #four {
   background: url(image_path("4-background.png")) no-repeat bottom left;
   height: 600px;
+}
 
+#bottom-wrapper div {
+  margin-top: 2px;
+  width: 100px;
+  height: 50px;
+  display: block;
+  border-radius: 10px;
+  p {
+    float: right;
+    font-size: 40px;
+    color: white;
+  }
 }
 
 .title {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .names {
@@ -130,80 +131,86 @@ p {
 }
 
 .compare-1 {
-  margin-top: 2px;
-  width: 950px;
-  height: 50px;
   background: #A4E786;
-  border-radius: 10px;
-  display: block;
-  p {
-    float: right;
-    font-size: 40px;
-    color: white;
-  }
 }
 
 .compare-2 {
-  margin-top: 2px;
-  width: 500px;
-  height: 50px;
   background: #1AD6FD; 
-  border-radius: 10px;
-  display: block;
-
-  p {
-    float: right;
-    font-size: 40px;
-    color: white;
-  }
 }
 
 .compare-3 {
-  margin-top: 2px;
-  width: 100px;
-  height: 50px;
   background:#FF3B30;
-  border-radius: 10px;
-  display: block;
-
-  p {
-    float: right;
-    font-size: 40px;
-    color: white;
-  }
 }
 
-.compare-1:hover {
-  -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
-  animation: myfirst 2s;
+.animate-1 {
+  -webkit-animation: increase-1 2s; /* Chrome, Safari, Opera */
+  animation: increase-1 2s;
 }
 
-.compare-2:hover {
-    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
-    animation: myfirst 2s;
+.animate-2 {
+  -webkit-animation: increase-2 2s; /* Chrome, Safari, Opera */
+  animation: increase-2 2s;
 }
 
-.compare-3:hover {
-    -webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
-    animation: myfirst 2s;
+.animate-3 {
+  -webkit-animation: increase-3 2s; /* Chrome, Safari, Opera */
+  animation: increase-3 2s;
 }
 
-@-webkit-keyframes myfirst {
+@-webkit-keyframes increase-1 {
   from {
-    width: 50px;
+    width: 100px;
   }
   to {
-    width: 950px;
+    width: 980px;
   }
 }
 
 /* Standard syntax */
-@keyframes myfirst {
+@keyframes increase-1 {
   from {
-    width: 50px;
+    width: 100px;
   }
   to {
-    width: 950px;
+    width: 980px;
+  }
+}
+
+@-webkit-keyframes increase-2 {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 550px;
+  }
+}
+
+/* Standard syntax */
+@keyframes increase-2 {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 550px;
+  }
+}
+
+@-webkit-keyframes increase-3 {
+  from {
+    width: 80px;
+  }
+  to {
+    width: 110px;
+  }
+}
+
+/* Standard syntax */
+@keyframes increase-3 {
+  from {
+    width: 80px;
+  }
+  to {
+    width: 110px;
   }
 }
 
