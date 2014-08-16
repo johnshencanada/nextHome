@@ -6,18 +6,17 @@ $(window).scroll(function(event) {
 		rotate(30);
 	}
 
-	if (topPosition >= 2726) {
+	if (topPosition >= 2406) {
 		$("#bottom-wrapper .compare-1").addClass('animate-1');
 		$("#bottom-wrapper .compare-2").addClass('animate-2');
 		$("#bottom-wrapper .compare-3").addClass('animate-3');
 	}
 
-	if (topPosition < 2726) {
+	if (topPosition < 2406) {
 		$("#bottom-wrapper .compare-1").removeClass('animate-1');
 		$("#bottom-wrapper .compare-2").removeClass('animate-2');
 		$("#bottom-wrapper .compare-3").removeClass('animate-3');
 	}
-
 
 	function rotate (degrees) {
 		console.log("hi");
