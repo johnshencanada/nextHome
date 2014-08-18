@@ -2,8 +2,9 @@ $(window).scroll(function(event) {
 	var topPosition = $(window).scrollTop();
 	console.log(topPosition);
 
-	if (topPosition >= 1540) {
-		rotate(30);
+	if (topPosition >= 1075) {
+		var degress = topPosition - 1075;
+		rotate(degress);
 	}
 
 	if (topPosition >= 2406) {
@@ -20,7 +21,7 @@ $(window).scroll(function(event) {
 
 	function rotate (degrees) {
 		console.log("hi");
-		$(".color_wheel img").css({
+		$(".color_wheel").css({
 		  '-webkit-transform' : 'rotate('+degrees+'deg)',
 		     '-moz-transform' : 'rotate('+degrees+'deg)',  
 		      '-ms-transform' : 'rotate('+degrees+'deg)',  
