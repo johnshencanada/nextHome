@@ -18,12 +18,12 @@
 }
 
 h3 {
-    font-family: $primary_font, $secondary_font, $tertiary_font;
-    font-weight: 300;
-    font-size: 70px;
-    color: $h3_color;
-    margin-bottom: 30px;
-    line-height: 1;
+  font-family: $primary_font, $secondary_font, $tertiary_font;
+  font-weight: 300;
+  font-size: 70px;
+  color: $h3_color;
+  margin-bottom: 30px;
+  line-height: 1;
 }
 
 p {
@@ -31,7 +31,7 @@ p {
 }
 
 .point_copy p, #other_points li p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 /************************************ Simple  ************************************/
@@ -65,16 +65,6 @@ p {
   z-index: 1;
 }
 
-#lightbulb {
-  display: inline;
-  margin: 0px auto;
-  img {
-    max-height: 10%;
-    max-width: 10%;
-  }
-  max-height: 100px;
-  max-width: 50px;
-}
 
 /************************************ Colorful  ************************************/
 #two {
@@ -84,6 +74,19 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 500px;
+}
+
+.lightbulb-1 {
+    background: black;
+
+  display: inline;
+  margin: 0px auto;
+  img {
+    max-height: 0%;
+    max-width: 10%;
+  }
+  max-height: 100px;
+  max-width: 50px;
 }
 
 .color_wheel {
@@ -128,8 +131,8 @@ p {
 }
 
 .names {
-    margin-top:20px;
-    display: block; 
+  margin-top:20px;
+  display: block; 
 }
 
 .compare-1 {
@@ -147,6 +150,7 @@ p {
 .animate-1 {
   -webkit-animation: increase-1 2s; /* Chrome, Safari, Opera */
   animation: increase-1 2s;
+  width: 880px;
 }
 
 .animate-2 {
@@ -164,7 +168,7 @@ p {
     width: 100px;
   }
   to {
-    width: 980px;
+    width: 880px;
   }
 }
 
